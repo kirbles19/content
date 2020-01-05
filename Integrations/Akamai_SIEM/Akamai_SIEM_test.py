@@ -6,6 +6,7 @@ import json
 # 3-rd party packages
 import pytest
 from freezegun import freeze_time
+import numpy
 
 # Local imports
 from CommonServerPython import urljoin
