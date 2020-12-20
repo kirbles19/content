@@ -6,11 +6,17 @@ The API Key can be retrieved by contacting your Expanse Engagement Manager.
 
 ### Additional Options
 
-You can determine several filters (**Priority**, **Activity Status**, **Progress Status**, **Business Units**, **Tags**, **Issue Types**) to fetch a subset of the Expanse Issue and generate Cortex XSOAR Incidents out of them.
+You can determine several filters to fetch a subset of the Expanse Issue and generate Cortex XSOAR Incidents from the the fetched issues.
+- **Priority**
+- **Activity Status**
+- **Progress Status**
+- **Business Units**
+- **Tags**
+- **Issue Types**
 
 ### Mirroring
 
-This integration supports bidirectional mirroring to keep Expanse Issues in sync with XSOAR Incidents. Enable mirroring by selecting the appropriate **Incident Mirroring Direction** (Incoming, Outgoing or Both).
+This integration supports bidirectional mirroring to keep Expanse Issues in sync with XSOAR Incidents. Enable mirroring by selecting the appropriate **Incident Mirroring Direction** (Incoming, Outgoing, or Both).
 
 The following flags will determine the behavior of the mirroring:
 - **Tag(s) for mirrored comments (incoming_tags**): when comments are created in an Expanse Issue, they are replicated in the War Room of the corresponding Cortex XSOAR incident if incoming mirroring is enabled. These Cortex XSOAR tags are added to the entries: they must be different from the sync_tags to prevent loops in case bidirectional mirroring is used.
